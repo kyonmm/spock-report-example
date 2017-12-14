@@ -1,0 +1,17 @@
+plugins {
+    id "groovy"
+}
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.4.+"
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
+    testCompile( 'com.athaydes:spock-reports:1.4.0' ) {
+        transitive = false
+    }
+    testCompile 'org.slf4j:slf4j-api:1.7.13'
+    testCompile 'org.slf4j:slf4j-simple:1.7.13'
+}
